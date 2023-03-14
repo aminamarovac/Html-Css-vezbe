@@ -13,3 +13,29 @@ p {
 #jedinstven {
   color: rgb(253, 137, 156);
 }
+h1 {
+  color: blue;
+  border: 2px solid rgb(13, 166, 255);
+  text-decoration: underline;
+}
+
+body div .inf {
+  text-align: center;
+}
+
+h1:hover {
+  color: rgb(86, 16, 86);
+  font-size: 50px;
+}
+
+a:visited {
+  color: rgb(26, 249, 26);
+}
+
+p:nth-child(odd) {
+  color: rgb(75, 42, 238);
+}
+
+p:last-of-type {
+  background-color: rgb(73, 218, 218);
+}
