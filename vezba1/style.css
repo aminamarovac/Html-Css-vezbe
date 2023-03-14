@@ -1,0 +1,15 @@
+p {
+  /* color: red;*/
+}
+
+.inf {
+  background-color: rgb(255, 255, 58);
+}
+
+.mat {
+  border: 2px dashed rgb(53, 200, 53);
+}
+
+#jedinstven {
+  color: rgb(253, 137, 156);
+}
