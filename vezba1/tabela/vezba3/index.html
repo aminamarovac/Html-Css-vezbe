@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .dete {
-            width: 150px;
-            height: 200px;
-            background-color: green;
-            margin: 10px;
-            /* flex-grow: 1; */
-            /* flex-shrink: 1; */
-        }
-        .roditelj {
-            display: flex;
-            /* flex-wrap: wrap; */
-            border: 2px solid black;
-            
-        }
-        #drugi{
-            flex-shrink: 10;
-        }
+      .dete {
+        width: 150px;
+        height: 200px;
+        background-color: green;
+        margin: 10px;
+        /* flex-grow: 1; */
+        /* flex-shrink: 1; */
+      }
+      .roditelj {
+        display: flex;
+        /* flex-wrap: wrap; */
+        border: 2px solid black;
+        justify-content: center;
+        height: 600px;
+        align-items: center;
+        align-self: flex-start;
+      }
+
+      #prvi {
+        align-self: flex-start;
+      }
+      #drugi {
+        align-self: center;
+        flex-shrink: 10;
+      }
+
+      #treci {
+        align-self: flex-end;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="roditelj">
-        <div class="dete"></div>
-        <div class="dete" id="drugi"></div>
-        <div class="dete"></div>
+      <div class="dete" id="prvi"></div>
+      <div class="dete" id="drugi"></div>
+      <div class="dete" id="treci"></div>
     </div>
-</body>
+  </body>
 </html>
