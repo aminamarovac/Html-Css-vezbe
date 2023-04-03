@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 4rem;
+  background-color: rgb(71, 58, 183);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main a {
+  text-decoration: none;
+  color: black;
+}
+
+.div {
+  background-color: rgb(219, 243, 235);
+  height: 600px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 30px 20px;
+}
+
+.box1 {
+  width: 300px;
+  height: 250px;
+  background-color: rgb(26, 85, 85);
+}
+
+.box2 {
+  width: 300px;
+  height: 250px;
+  background-color: rgb(27, 78, 78);
+}
+
+.box3 {
+  width: 300px;
+  height: 250px;
+  background-color: rgb(14, 54, 54);
+}
+
+.box4 {
+  width: 300px;
+  height: 250px;
+  background-color: rgb(14, 54, 54);
+}
+
+.box5 {
+  width: 300px;
+  height: 250px;
+  background-color: rgb(14, 54, 54);
+}
+
+.box6 {
+  width: 300px;
+  height: 250px;
+  background-color: rgb(14, 54, 54);
+}
+
+.box7 {
+  width: 300px;
+  height: 250px;
+  background-color:  rgb(8, 79, 79);
+}
+
+.box8 {
+  width: 300px;
+  height: 250px;
+  background-color: rgb(8, 79, 79);
+}
+
+p {
+  margin: 220px 80px;
+}
+
+.footer {
+  width: 100vw;
+  height: 6rem;
+  background-color: rgb(18, 128, 138);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
