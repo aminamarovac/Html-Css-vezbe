@@ -8,8 +8,8 @@ header{
     width: 100vw;
     height: 4rem;
     background-color: aqua;
-    position: relative;
-     z-index: 999.9; 
+    position: fixed;
+    z-index: 999.9; 
     top: 0;
     left: 0; 
 }
@@ -48,11 +48,12 @@ a{
 }
 
 footer{
-    min-height: 7rem;
+    min-height: 17rem;
     background-color: aquamarine;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #id1{
