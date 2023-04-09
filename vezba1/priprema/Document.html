@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///C:/Users/HP/Downloads/priprema-za-kolokvijum%20(1).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            /* Inicijalno resetovanje */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            /* vh - viewport height, vw - viewport width */
+            min-height: 100vh;
+            /* Koristeci min-height, dobijamo mogucnost da dodavanjem novog sadrzaja u containeru,
+             i container povecava svoju visinu dokle god je potrebno */
+            width: 100%;
+            border: 3px solid black;
+        }
+        
+        .nav {
+            background-color: grey;
+            height: 10vh;
+            width: 100%;
+            position: sticky;
+            /* navigacioni bar ce uz pomoc ovakvog pozicioniranja, 
+            bez obzira na scroll, ostajati na svom mestu */
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            /* za position dodeliti fixed, pa primetiti sta se desava u tom slucaju */
+        }
+        
+        .wrap {
+            display: flex;
+            width: 100%;
+            min-height: 90vh;
+            border: 3px solid rgb(74, 74, 173);
+        }
+        
+        .sidebar {
+            width: 20%;
+            background-color: black;
+            min-height: 90vh;
+            position: relative;
+            /* Zadajemo position:relative jer kasnije radimo sa 
+            njegovim dete-elementom (.krug) koji ce imati position absolute */
+        }
+        
+        .krug img {
+            max-width: 100%;
+            max-height: 100px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            top: 50px;
+            left: 35%;
+            border: 10px solid white;
+        }
+        
+        .main {
+            background-color: rgb(253, 253, 253);
+            min-height: 90vh;
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .col {
+            width: 29%;
+            height: 40vh;
+            margin: 2.1%;
+            background-color: rgb(105, 117, 211);
+            border-radius: 5px;
+            /* border-radius zaobljuje ivice, ili, ako je vrednost 50%, 
+            a height i width elementa istih dimenzija, kreira krug */
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        
+        .forma {
+            color: white;
+            position: relative;
+            top: 15%;
+            left: 20%;
+        }
+        
+        .forma input,
+        .forma label {
+            margin: 5px;
+            padding: 5px;
+            max-width: 60%;
+            font-size: 1em;
+        }
+        
+        .col h1,
+        .col p {
+            padding: 10px;
+            color: #ffffff;
+        }
+        
+        .div-with-img {
+            width: 100%;
+            height: 30vh;
+            background-image: url("img/slika2.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            /* Zbog svojstva background-attachment:fixed, fotografija scroll-uje 
+            onda kada scroll-ujemo stranicom. 
+            Zakomentarisati to svojstvo i obratiti paznju na ponasanje fotografije u tom slucaju */
+        }
+        
+        .footer {
+            width: 100%;
+            height: 20vh;
+            background-color: rgb(67, 60, 60);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav"></div>
+        <div class="wrap">
+            <div class="sidebar">
+                <div class="krug">
+                    <img src="file:///C:/Users/HP/Downloads/img/avatar.jpg" alt="">
+                </div>
+
+                <form action="file:///C:/Users/HP/Downloads/priprema-za-kolokvijum%20(1).html" class="forma">
+                    <label for="">Unesite korisnicko ime</label><br>
+                    <input type="text"><br>
+                    <label for="">Unesite password</label><br>
+                    <input type="password"><br>
+
+                    <input type="submit" value="Prosledi">
+                </form>
+            </div>
+            <div class="main">
+                <div class="col">
+                    <h1>Naslov</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, temporibus? Et eius corporis rerum reprehenderit ea illo quaerat, commodi suscipit aliquam fuga illum aspernatur id, voluptas sed mollitia accusamus, molestias sint debitis
+                        nesciunt perspiciatis praesentium facilis ullam soluta! Quos veritatis perferendis at. Delectus illum beatae harum, maxime natus corporis architecto.</p>
+                </div>
+                <div class="col">
+                    <h1>Naslov</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, temporibus? Et eius corporis rerum reprehenderit ea illo quaerat, commodi suscipit aliquam fuga illum aspernatur id, voluptas sed mollitia accusamus, molestias sint debitis
+                        nesciunt perspiciatis praesentium facilis ullam soluta! Quos veritatis perferendis at. Delectus illum beatae harum, maxime natus corporis architecto.</p>
+                </div>
+                <div class="col">
+                    <h1>Naslov</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, temporibus? Et eius corporis rerum reprehenderit ea illo quaerat, commodi suscipit aliquam fuga illum aspernatur id, voluptas sed mollitia accusamus, molestias sint debitis
+                        nesciunt perspiciatis praesentium facilis ullam soluta! Quos veritatis perferendis at. Delectus illum beatae harum, maxime natus corporis architecto.</p>
+                </div>
+
+                <div class="div-with-img">
+
+                </div>
+                <div class="col">
+                    <h1>Naslov</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, temporibus? Et eius corporis rerum reprehenderit ea illo quaerat, commodi suscipit aliquam fuga illum aspernatur id, voluptas sed mollitia accusamus, molestias sint debitis
+                        nesciunt perspiciatis praesentium facilis ullam soluta! Quos veritatis perferendis at. Delectus illum beatae harum, maxime natus corporis architecto.</p>
+                </div>
+                <div class="col">
+                    <h1>Naslov</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, temporibus? Et eius corporis rerum reprehenderit ea illo quaerat, commodi suscipit aliquam fuga illum aspernatur id, voluptas sed mollitia accusamus, molestias sint debitis
+                        nesciunt perspiciatis praesentium facilis ullam soluta! Quos veritatis perferendis at. Delectus illum beatae harum, maxime natus corporis architecto.</p>
+                </div>
+                <div class="col">
+                    <h1>Naslov</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, temporibus? Et eius corporis rerum reprehenderit ea illo quaerat, commodi suscipit aliquam fuga illum aspernatur id, voluptas sed mollitia accusamus, molestias sint debitis
+                        nesciunt perspiciatis praesentium facilis ullam soluta! Quos veritatis perferendis at. Delectus illum beatae harum, maxime natus corporis architecto.</p>
+                </div>
+                <div class="col">
+                    <h1>Naslov</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, temporibus? Et eius corporis rerum reprehenderit ea illo quaerat, commodi suscipit aliquam fuga illum aspernatur id, voluptas sed mollitia accusamus, molestias sint debitis
+                        nesciunt perspiciatis praesentium facilis ullam soluta! Quos veritatis perferendis at. Delectus illum beatae harum, maxime natus corporis architecto.</p>
+                </div>
+                <div class="col">
+                    <h1>Naslov</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, temporibus? Et eius corporis rerum reprehenderit ea illo quaerat, commodi suscipit aliquam fuga illum aspernatur id, voluptas sed mollitia accusamus, molestias sint debitis
+                        nesciunt perspiciatis praesentium facilis ullam soluta! Quos veritatis perferendis at. Delectus illum beatae harum, maxime natus corporis architecto.</p>
+                </div>
+                <div class="col">
+                    <h1>Naslov</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, temporibus? Et eius corporis rerum reprehenderit ea illo quaerat, commodi suscipit aliquam fuga illum aspernatur id, voluptas sed mollitia accusamus, molestias sint debitis
+                        nesciunt perspiciatis praesentium facilis ullam soluta! Quos veritatis perferendis at. Delectus illum beatae harum, maxime natus corporis architecto.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+
+</body></html>
