@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.glavni{
+    width: 100%;
+    min-height: 150vh;
+    position: relative;
+}
+
+.slika{
+    width: 100vw;
+    height:10vh;
+    background-image: url("/vezbanje/download.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    width: 100vw;
+    height: 12vh;
+    background-color: aquamarine;
+    position: sticky;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+.avatar {
+    position: relative;
+    height: 10vh;
+
+}
+
+.avatar img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 27%;
+    left: 14%;
+
+}
+
+ul{
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: -40%;
+    left: -20%;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    margin: 10px;
+}
+
+.satabelom{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background-color: antiquewhite;
+}
+
+.text{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+button{
+    width: 90px;
+    height: 30px;
+    background-color: rgb(20, 20, 38);
+    color: antiquewhite;
+    border-radius: 90px;
+    margin-top: 10px;
+}
+
+#id1{
+    text-decoration: underline;
+}
+table{
+width: 400px;
+height: 250px;
+text-align: center;
+border-collapse: collapse;
+border: 1px solid black;
+position: relative;
+left: 60%;
+top: 15%;
+}
+
+.srednji{
+    width: 100vw;
+    height: 60vh;
+    background-color: rgb(91, 127, 127);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.box{
+    width: 20%;
+    height: 70%;
+    background-color: cornflowerblue;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+}
+
+.srednji img{
+    width: 60%;
+    height: 30%;
+    position: relative;
+    top: 10%;
+    left: 20%;
+}
+.box p{
+    margin: 15px;
+    position: relative;
+    top: 10%;
+}
+.box h1{
+    margin: 15px;
+    position: relative;
+    top: 10%;
+}
+
+.kraj{
+    width: 100%;
+    height: 40vh;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plavi{
+    width: 50%;
+    height: 35vh;
+    background-color: blue;
+    position: relative;
+}
+form{
+    width: 100%;
+    height: 20vh;
+    margin: 15px;
+    position: relative;
+    left: 15%;
+}
+input {
+    margin: 10px;
+}
+
+label,option,select{
+    margin: 10px;
+}
+
+.ok{
+    width:100px;
+    height: 100px;
+    background-color: rgb(10, 20, 17);
+    position: absolute;
+    z-index: 2;
+    top: -6%;
+    left: 90%;
+}
